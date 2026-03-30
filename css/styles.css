@@ -893,3 +893,8 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.blue-link {
+    color: #0000ee;
+    text-decoration: underline;
+}
