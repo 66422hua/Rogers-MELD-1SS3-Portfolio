@@ -454,6 +454,82 @@ body {
 }
 
 /* Report Specific */
+.report-layout {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.title-with-author {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid var(--primary);
+    padding-left: 1rem;
+}
+
+.author-label {
+    font-family: var(--font-headline);
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.author-name-inline {
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.report-image-container,
+.reflection-image-container {
+    margin: 3rem 0;
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+    background-color: var(--white);
+}
+
+.report-image-container img,
+.reflection-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.report-image-container img:hover,
+.reflection-image-container img:hover {
+    filter: grayscale(0%);
+}
+
+.sidebar-caption {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+    text-align: center;
+    font-family: var(--font-sans);
+}
+
+.image-caption {
+    font-family: var(--font-headline);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
 .header-top {
     display: flex;
     align-items: center;
